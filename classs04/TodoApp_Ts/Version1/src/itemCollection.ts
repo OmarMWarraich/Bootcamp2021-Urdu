@@ -18,7 +18,7 @@ export class ItemCollection{
     }
 
     public taskDone(taskId: number){
-        let item: TodoItem = this.Items.find((item)=>item.id === taskId)
-        item.complete = true;
+        let item2: TodoItem = this.Items.find((item)=>item.id === taskId)
+        item2.complete = true;
     }
 }
