@@ -20,3 +20,13 @@ export class TaskCollection{
     public printAll() : void{
         this.tasks.forEach((item: Task) => item.printTask())
     }
+
+    public taskDone(taskId: number){
+        let item: Task = this.tasks.find((item: Task) => item.taskId === taskId);
+        item.done = true;
+    }
+
+    getTodoById(id: number): Task {
+        return this.itemMap.get(id);
+    }
+}
